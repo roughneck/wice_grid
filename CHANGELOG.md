@@ -2,6 +2,7 @@
 
 * Fix bug in "Dangerous query methods" deprecation warning fix in custom order when using Arel.sql
 * Fix CSV export download link in combination with Turbolinks 5 (download the file instead of rendering it as text)
+* Loosen lock on Kaminari
 
 ## 4.1.0 (28 November, 2018)
 
