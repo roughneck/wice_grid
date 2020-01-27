@@ -31,16 +31,12 @@ SimpleCov.start do
   minimum_coverage 87.53
 end
 
-begin
-  require 'support/active_record'
-  require 'action_controller'
-  require 'action_view'
-  require 'csv'
+require 'support/active_record'
+require 'action_controller'
+require 'action_view'
+require 'csv'
 
-  ActiveRecord::Base.logger = Logger.new(STDOUT)
-rescue LoadError
-  puts 'LoadError'
-end
+ActiveRecord::Base.logger = Logger.new(STDOUT)
 
 $LOAD_PATH.unshift(File.expand_path(File.dirname(__FILE__) + '/../lib'))
 require 'wice_grid'
