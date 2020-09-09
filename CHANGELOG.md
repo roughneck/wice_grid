@@ -5,6 +5,7 @@
 * Fix CSV export download link in combination with Turbolinks 5 (download the file instead of rendering it as text)
 * Allow Rails 6 in gemspec lock
 * Do not add group to WiceGrid#read relation when there is no group. Fixes wrong pagination when having including a many association.
+* Fix CSV export icon for FontAwesome 5
 
 ## 4.1.0 (28 November, 2018)
 
