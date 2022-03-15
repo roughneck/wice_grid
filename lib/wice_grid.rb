@@ -574,7 +574,7 @@ module Wice
         end
       end
 
-      return custom_order if custom_order.nil? || custom_order.is_a?(Arel::Attributes::Attribute)
+      return custom_order if custom_order.nil? || custom_order.is_a?(Arel::Attributes::Attribute) || custom_order.is_a?(Arel::Nodes::SqlLiteral)
       return custom_order.gsub(/\?/, fully_qualified_column_name) if custom_order.is_a?(String)
       return custom_order.call(fully_qualified_column_name) if custom_order.is_a?(Proc)
       raise WiceGridArgumentError.new("invalid custom order #{custom_order.inspect}")
