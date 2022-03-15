@@ -6,6 +6,7 @@
 * Allow Rails 6 in gemspec lock
 * Do not add group to WiceGrid#read relation when there is no group. Fixes wrong pagination when having including a many association.
 * Fix CSV export icon for FontAwesome 5
+* Fix "can't modify frozen" in combination with Rails 6.1
 
 ## 4.1.0 (28 November, 2018)
 
